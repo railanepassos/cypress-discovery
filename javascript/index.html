@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Discovery</title>
+    <style>
+        .div {
+            align-items: center;
+            text-align: center;
+            width: 220px;
+            background-color: blueviolet;
+            border-width: 3px;
+        }
+        .input {            
+            background-color: rgb(0, 153, 255);
+            border-radius: 2px;
+            border-color: none;
+            text-align: center;
+            font-size: small;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            width: 150px;
+
+        }
+        input::placeholder {
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>CNH</h1>
+        <h5>Verifique se sua idade permite que tire a CNH.</h5>
+        <input type="text" name="nome" class="input" placeholder="digite seu nome">
+        <input type="number" name="idade" class="input" placeholder="digite sua idade">
+        <button type="button" onclick="verificarIdade()">Verificar</button>
+
+    </div>
+    <div>
+        <h1>Vingadores</h1>
+        <ul>
+            <li>Tony Stark</li>
+            <li>Clint Barton</li>
+            <li>Natasha Romanoff</li>
+            <li>Steve Rogers</li>
+
+        </ul>
+        
+    </div>
+
+    <script type="text/javascript">
+
+        var avengers = ['Tony Star', 'Clint Barton', 'Natasha Romanoff', 'Steve Rogers']
+
+        function listaVingadores() {
+            console.log(aven)
+            
+        }
+
+        function verificarIdade() {
+            var nome = document.querySelector('input[name=nome]');
+            nome = nome.value
+            var idade = document.querySelector('input[name=idade]');
+            
+            if (idade.value.length == 0) {
+                alert('O campo idade é obrigatórios.');
+                return
+            }
+
+            idade = parseInt(idade.value);
+            var anosRestantes = 18 - idade;
+
+            if (idade >= 18) {
+                alert(nome + ', você está liberada para tirar CNH');
+                
+            } else {
+
+                alert(nome + ', faltam ' + anosRestantes + ' ano(os) restantes para que possa tirar sua CNH.')
+                
+            }
+            
+        }
+
+
+
+
+    </script>
+    
+    
+</body>
+</html>
