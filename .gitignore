@@ -1,1 +1,6 @@
+## Arquivos de Sistemas
 .DS_store
+
+## Arquivos do Node
+javascript/node_modules
+javascript/package-lock.json
