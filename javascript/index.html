@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cypress Discovery</title>
-    <style>
-        .CNH {
-            align-items: center;
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: rgb(104, 95, 150);
-            border-radius: 5px;
-            padding: 10px;
-            margin: 5px;
-        }
-        .avengers {
-            align-items: center;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: rgb(150, 95, 123);
-            padding: 10px;
-        }
-    </style>
+
 </head>
+
 <body>
     <div class="CNH">
         <h1>CNH</h1>
@@ -37,58 +23,12 @@
         <h1>Vingadores</h1>
         <button type="button" onclick="listaVingadores()">Listar Vingadores</button>
         <ul id="avengers"></ul>
-        
+
     </div>
 
-    <script type="text/javascript">
+    <script text="text/javascript" src="js/cnh.js"></script>
+    <script text="text/javascript" src="js/avengers.js"></script>
 
-        // Simulando uma API
-        var avengers = ['Tony Star', 'Clint Barton', 'Natasha Romanoff', 'Steve Rogers']
-
-        function listaVingadores() {
-
-            var ul = document.getElementById('avengers');
-            ul.innerHTML = '';
-
-            avengers.forEach(function (avenger) {
-                var li = document.createElement('li');
-                var text = document.createTextNode(avenger);
-                li.appendChild(text);
-                ul.appendChild(li);
-                
-            })
-            
-        }
-
-        function verificarIdade() {
-            var nome = document.querySelector('input[name=nome]');
-            nome = nome.value
-            var idade = document.querySelector('input[name=idade]');
-            
-            if (idade.value.length == 0) {
-                alert('O campo idade é obrigatórios.');
-                return
-            }
-
-            idade = parseInt(idade.value);
-            var anosRestantes = 18 - idade;
-
-            if (idade >= 18) {
-                alert(nome + ', você está liberada para tirar CNH');
-                
-            } else {
-
-                alert(nome + ', faltam ' + anosRestantes + ' ano(os) restantes para que possa tirar sua CNH.')
-                
-            }
-            
-        }
-
-
-
-
-    </script>
-    
-    
 </body>
+
 </html>

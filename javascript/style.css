@@ -1,0 +1,18 @@
+
+.CNH {
+    align-items: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(104, 95, 150);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.avengers {
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(150, 95, 123);
+    padding: 10px;
+}
