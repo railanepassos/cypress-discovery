@@ -6,3 +6,8 @@ javascript/node_modules
 javascript/package-lock.json
 buger-eats/node_modules
 buger-eats/package-lock.json
+
+# Arquivos Cypress
+buger-eats/cypress/videos
+buger-eats/cypress/screenshots
+buger-eats/cypress/downloads
