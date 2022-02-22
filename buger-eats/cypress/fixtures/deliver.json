@@ -34,5 +34,23 @@
         "deliveryMethod": "Moto",
         "cnh": "cnh-digital.jpeg"
 
+    },
+    "invalidEmail": {
+        "name": "Davi Bury",
+        "email": "davibury.com.br",
+        "cpf": "42335124668",
+        "whatsapp": "7199671515",
+        "address": {
+            "postalCode": "40387030",
+            "street": "Ladeira da Alegria",
+            "number": "1000",
+            "complement": "Predio Bury, Ap 254",
+            "district": "Boa Vista de São Caetano",
+            "cityState": "Salvador/BA"
+
+        },
+        "deliveryMethod": "Moto",
+        "cnh": "cnh-digital.jpeg"
+
     }
 }

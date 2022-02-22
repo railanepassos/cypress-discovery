@@ -9,7 +9,7 @@ class SignupPage {
 
     accessDeliverPage() {
         cy.viewport(1366, 768);
-        cy.visit('https://buger-eats.vercel.app');
+        cy.visit('/');
         cy.get('a[href="/deliver"]').click();
 
         // have bug here
@@ -20,7 +20,7 @@ class SignupPage {
     fillFormRegister(deliver) {
 
         // Person data
-        cy.get('input[name="name"]').type(deliver.name);
+        cy.get('input[name="fullName"]').type(deliver.name);
         cy.get('input[name="email"]').type(deliver.email);
         cy.get('input[name="cpf"]').type(deliver.cpf);
         cy.get('input[name="whatsapp"]').type(deliver.whatsapp);
