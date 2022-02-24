@@ -18,13 +18,14 @@ jobs:
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
         with:
+          run: cd buger-eats/
           install-command: yarn install
           wait-on: ${{ secrets.BASE_URL_QA }}
           wait-on-timeout: 120
           browser: chrome
           record: true
           group: 'UI - Chrome'
-          spec: buger-eats/cypress/integration/*
+          spec: cypress/integration/*
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
