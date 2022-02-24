@@ -50,12 +50,14 @@ class SignupPage {
     }
 
     modalContentShouldBe(expectedMessage) {
-        cy.get('.swal2-popup .swal2-html-container').should('have.text', expectedMessage);
+        // cy.get('.swal2-popup .swal2-html-container').should('have.text', expectedMessage);
+        cy.contains('.swal2-popup .swal2-html-container', expectedMessage).should('be.visible');
 
     }
 
     alertMessageShouldBe(expectedMessage) {
-        cy.get('.alert-error').should('have.text', expectedMessage);
+        // cy.get('.alert-error').should('have.text', expectedMessage);
+        cy.contains('.alert-error', expectedMessage).should('be.visible');
 
     }
 

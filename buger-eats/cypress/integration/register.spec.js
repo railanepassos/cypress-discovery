@@ -24,7 +24,7 @@ describe('Register', () => {
         signupPage.submitFormRegister();
         signupPage.modalContentShouldBe(successMessage)
 
-    })
+    });
     it('it should be possible to see the message when delivery person type invalid CPF', function () {
 
         const deliver = signupFactory.deliver();
@@ -34,8 +34,8 @@ describe('Register', () => {
         signupPage.fillFormRegister(deliver);
         signupPage.submitFormRegister();
         signupPage.alertMessageShouldBe('Oops! CPF inválido');
-  
-    })
+
+    });
     it('it should be possible to see the message when delivery person type invalid Email', function () {
 
         const deliver = signupFactory.deliver();
@@ -45,6 +45,38 @@ describe('Register', () => {
         signupPage.fillFormRegister(deliver);
         signupPage.submitFormRegister();
         signupPage.alertMessageShouldBe('Oops! Email com formato inválido.');
-  
-    })
+
+    });
+
+    context('required fields', function () {
+
+        const messages = [
+            { field: 'name', output: 'É necessário informar o nome' },
+            { field: 'cpf', output: 'É necessário informar o CPF' },
+            { field: 'email', output: 'É necessário informar o email' },
+            { field: 'cep', output: 'É necessário informar o CEP' },
+            { field: 'postalCode', output: 'É necessário informar o número do endereço' },
+            { field: 'deliveryMethod', output: 'Selecione o método de entrega' },
+            { field: 'cnh', output: 'Adicione uma foto da sua CNH' }
+
+        ];
+
+        before(function () {
+            signupPage.accessDeliverPage();
+            signupPage.submitFormRegister();
+
+        });
+
+        messages.forEach(function (message) {
+            it(`it should be possible to see the message ${message.field} is required`, function () {
+                signupPage.alertMessageShouldBe(message.output);
+
+            });
+            
+        })
+
+        
+
+    });
+   
 })
