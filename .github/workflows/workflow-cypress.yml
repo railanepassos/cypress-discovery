@@ -20,7 +20,7 @@ jobs:
         uses: cypress-io/github-action@v2
         
         with:
-          working-directory: /__w/cypress-discovery/buger-eats/
+          working-directory: buger-eats/
           install-command: yarn install
           wait-on: ${{ secrets.BASE_URL_QA }}
           wait-on-timeout: 120
