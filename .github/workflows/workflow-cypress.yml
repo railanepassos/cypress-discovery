@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: 'Access folder tests'
-        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+        run: cd "/cypress-discovery/buger-eats"
         
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
