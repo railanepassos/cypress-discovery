@@ -16,10 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
+        with: 
+          working-directory: buger-eats/
+        
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
+        
         with:
-          working-directory: buger-eats/
           install-command: yarn install
           wait-on: ${{ secrets.BASE_URL_QA }}
           wait-on-timeout: 120
