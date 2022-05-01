@@ -2,12 +2,16 @@
 <p>Desenvolvido durante o curso Cypress Discovery promovido pela plataforma https://app.qaninja.com.br/ sob orientação do Coordenador Papito Fernando.</p>
 
 <br><h3>Execução do testes criados no projeto</h3>
-<img width="350" height="200" src="buger-eats/images/home.spec.gif">
-<img width="350" height="200" src="buger-eats/images/register.spec.gif">
+<p>
+  <img width="350" height="200" src="buger-eats/images/home.spec.gif">
+  <img width="350" height="200" src="buger-eats/images/register.spec.gif">
+</p>
 
 <br><h3>Ferramentas e tecnologias ultilizadas</h3>
-<img src="buger-eats/images/cypress.png" width="25" height="25">
-<img src="buger-eats/images/javascript.png" width="25" height="25">
+<p>
+  <img src="buger-eats/images/cypress.png" width="25" height="25">
+  <img src="buger-eats/images/javascript.png" width="25" height="25">
+</p>
 
 <br><h3>Cenários implementados no projeto</h3>
 
