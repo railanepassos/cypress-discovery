@@ -3,8 +3,8 @@
 
 <br><h3>Execução do testes criados no projeto</h3>
 <p>
-  <img width="350" height="200" src="buger-eats/images/home.spec.gif">
-  <img width="350" height="200" src="buger-eats/images/register.spec.gif">
+  <img width="470" height="350" src="buger-eats/images/home.spec.gif">
+  <img width="470" height="350" src="buger-eats/images/register.spec.gif">
 </p>
 
 <br><h3>Ferramentas e tecnologias ultilizadas</h3>
